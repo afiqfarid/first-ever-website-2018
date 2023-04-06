@@ -1,0 +1,162 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: century gothic;
+  background-color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Sidenav */
+span.one {
+  float: left;
+  display: block;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  padding: 8px 17px 9px 19px;
+  cursor: pointer;
+  margin-left: 118px;
+}
+
+span.one:hover {
+  color: cyan;
+  background-color: grey;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+
+.sidenav p {
+  padding: 0 8px 0 32px;
+  text-decoration: underline;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+}
+
+.sidenav a {
+  padding: 8px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: cyan;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+/* Top Navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  border: 1px;
+  border-style: solid hidden;
+  border-color: grey;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.topnav a:hover {
+  color: cyan;
+  background-color: darkgray;
+}
+
+
+
+.background {
+  border-style: hidden;
+  overflow: auto;
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-shadow: 4px 2px cyan;
+}
+
+/* Gallery */
+.column {
+  float: right;
+  width: 50%;
+  margin: 0;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+.row:after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+
+
+/* Footer */
+.footer {
+  position:relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 98.5%;
+  background-color: #c0c0c0;
+  padding: 10px ;
+  text-align: center;
+}
+

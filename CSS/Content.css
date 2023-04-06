@@ -1,0 +1,251 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: century gothic;
+  background-color: whitesmoke;
+}
+
+
+/* Sidenav */
+span.one {
+  float: left;
+  display: block;
+  color: white;
+  font-size: 21px;
+  text-align: center;
+  padding: 8px 17px 9px 19px;
+  cursor: pointer;
+  margin-left: 118px;
+}
+
+span.one:hover {
+  color: cyan;
+  background-color: grey;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+
+.sidenav p {
+  padding: 0 8px 0 32px;
+  text-decoration: underline;
+  font-size: 18px;
+  color: whitesmoke;
+  display: block;
+}
+
+.sidenav a {
+  padding: 8px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: cyan;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+/* Top Navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  border: 1px;
+  border-style: solid hidden;
+  border-color: grey;
+  height: 46px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.topnav a:hover {
+  color: cyan;
+  background-color: darkgray;
+}
+
+
+
+
+
+.background {
+  border-style: hidden;
+  overflow: auto;
+  margin-left: 190px;
+  margin-right: 0px;
+  margin-top: 65px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-shadow: 4px 2px cyan;
+}
+
+p.title {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+p.content {
+  font-family: helvetica;
+  line-height: 1.8;
+  font-size: 17px;
+  font-weight:500;
+  white-space: pre;
+}
+
+p.newsheader {
+  font-size: 35px;
+}
+
+
+
+
+
+/* Slideshow */
+.slideshowborder {
+    border-style: hidden;
+    box-shadow: 0 4px 8px 0 black;
+    border-color: black;
+    max-height: 1200px;
+    overflow: auto;
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.thisimage {
+    float: left;
+    width: 70%;
+    height: 430px;
+    padding-right: 45px; 
+}
+
+.thiswords {
+    background-color: whitesmoke;
+    padding-top: 30px;
+    padding-right: 35px;
+    color: black;
+}
+
+
+
+
+/* Links */
+a.one:link {
+  color: black;
+  text-decoration: none;
+}
+
+a.one:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a.one:hover {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+a.one:active {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+
+
+/* Forms */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: aqua;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darkcyan;
+}
+
+.forms {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+  position:relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 98.5%;
+  background-color: #c0c0c0;
+  padding: 10px ;
+  text-align: center;
+}
+
